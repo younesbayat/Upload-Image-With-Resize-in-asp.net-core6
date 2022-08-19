@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="text-center">
+    <h3>Upload Image With Resize</h3>
+    <br/>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 offset-lg-3 offset-md-3">
+            <form class="was-validated" method="post" enctype="multipart/form-data">
+                <div class=" mb-3">
+                    <input type="file" name="image" class="form-control" title="image..." placeholder="image..." />
+                </div>
+                <div class=" mb-3 col-6 p-2" style="float: left">
+                    <input type="number" name="width" class="form-control" placeholder="width..." />
+                </div>
+                <div class=" mb-3 col-6 p-2" style="float: left">
+                    <input type="number" name="height" class="form-control" placeholder="height..."  /> 
+                </div>
+
+                <div class=" mb-3">
+                    <input type="submit" class="btn btn-success rounded-3" value="Submit" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
